@@ -1,5 +1,2 @@
-include ':core'
-include ':gdt'
-include ':csj'
-include ':baidu'
-include ':demo'
+include ':app'
+include ':togetherAd'
