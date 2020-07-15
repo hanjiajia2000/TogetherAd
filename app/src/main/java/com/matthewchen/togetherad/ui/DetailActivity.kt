@@ -13,7 +13,6 @@ import com.rumtel.ad.helper.inter.TogetherAdInter
 import com.rumtel.ad.helper.mid.TogetherAdMid
 import com.rumtel.ad.helper.preMovie.TogetherAdPreMovie
 import com.rumtel.ad.helper.preMovie.TogetherAdVerticalPreMovie
-import com.rumtel.ad.other.AdPresentType
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
@@ -75,7 +74,7 @@ class DetailActivity : AppCompatActivity() {
             override fun onStartRequest(channel: String) {
                 Log.e("ifmvo", "onStartRequest:channel:$channel")
             }
-        }, needTimer = needTimer, present = AdPresentType.NativeVideo.present)
+        }, needTimer = needTimer)
     }
 
     private fun preMovieAd(needTimer: Boolean) {
